@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Damage Car Prediction
+        </title>
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+        <script src="{{ url_for('static', path='/display.js') }}"></script>
+        <script data-ad-client="ca-pub-1908341312072526" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    </head>
+    <body>
+        <div><h1>Damage Car Detection</h1></div>
+        <div class="container">
+            <div class="child">
+                <div class="submitbutton">
+                    <form action="/predict/" enctype="multipart/form-data" method="post">
+                        <input name="file" type="file" onchange="readURL(this);" />
+                        <button type="submit">Upload</button>
+                    </form>
+                </div>
+                <img id="blah" />
+            </div>
+        </div>
+    </body>
+</html>

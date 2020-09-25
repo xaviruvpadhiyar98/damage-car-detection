@@ -1,0 +1,9 @@
+fastapi
+jinja2
+aiofiles
+requests
+uvicorn
+fastai==1.0.61
+torchvision==0.5.0
+https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp36-cp36m-linux_x86_64.whl
+python-multipart
